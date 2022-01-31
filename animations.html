@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .bar-chart{
+            display: block;
+            width: 300px;
+            padding:1em;
+            background: lightgray   ;
+        }
+  
+
+        .bar {
+            display: inline-block;
+            width: 30px;
+            height: 300px;
+            background-color: darkgray;
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .empty-bar1{
+            background: white;
+            height: 100%;
+            animation-duration: 2s;
+            animation-name:increase1
+        }
+        .empty-bar2{
+            background: white;
+            height: 100%;
+            animation-duration: 2s;
+            animation-name:increase2
+        }
+        .empty-bar3{
+            background: white;
+            height: 100%;
+            animation-duration: 2s;
+            animation-name:increase3
+        }
+        @keyframes increase1{
+            from{
+               height: 100%;     
+            }
+
+            to{
+               height: 70%; 
+            }
+        }
+        @keyframes increase2{
+            from{
+               height: 100%;     
+            }
+
+            to{
+               height: 60%; 
+            }
+        }
+        @keyframes increase3{
+            from{
+               height: 100%;     
+            }
+
+            to{
+               height: 20%; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar-chart">
+        <div class="bar">
+            <div class="empty-bar1">
+
+            </div>
+        </div>
+        <div class="bar">
+            <div class="empty-bar2">
+
+            </div>
+        </div>
+        <div class="bar">
+            <div class="empty-bar3">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
